@@ -1,0 +1,1046 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.p100 {
+    padding: 100px;
+}
+
+
+
+.main{
+    display: none;
+}
+.loader2{
+    background-color: #3870ed;
+}
+.loader2{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+.loader2>div{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(182, 173, 173);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50px;
+    position: absolute;
+    border-bottom-color: white;
+    animation: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+
+    }
+}
+
+
+
+/* header */
+header {
+    width: 100%;
+    height: 80px;
+    z-index: 9999;
+    position: absolute;
+}
+
+.logo img {
+    width: 141px;
+    padding: 10px;
+
+}
+
+.menu {
+    align-self: center;
+}
+
+header .menu ul li {
+    padding: 5px;
+    margin-left: 20px;
+    list-style: none;
+}
+
+header ul li:first-child {
+    border-bottom: 2px solid #265cdc;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+menu ul li :first-child {
+    border-bottom: 2px solid #ffffff;
+}
+
+.section-bg {
+    width: 100%;
+    height: 773px;
+    background-image: url('https://20148114.fs1.hubspotusercontent-na1.net/hubfs/20148114/raw_assets/public/Melinda/images/mw-phone.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.centent .img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 220px;
+    bottom: 230px;
+}
+p{
+    color: white;
+    text-decoration: none;
+    font-family: Jost,sans-serif;
+    font-style: normal;
+    font-size: 22px;
+    margin: 20px;
+    margin-top: 20px;
+    line-height: 1;
+}
+
+
+.centent .img-1 {
+    position: absolute;
+    top: 70px;
+    left: 180px;
+
+}
+
+/* title */
+
+.hading-title h1 {
+    color: white;
+    font-size: 45px;
+    padding: 300px;
+}
+
+.hading-title {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+}
+
+.img-1 {
+    padding: 19px;
+}
+
+.drop-down,
+.mega-menu {
+    width: 20%;
+    background-color: #262626;
+    position: absolute;
+    top: 80px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+
+}
+
+.drop-down ul {
+    margin-left: 0;
+    margin-bottom: 10px;
+
+}
+
+.drop-down ul li:first-child,
+.mega-menu ul li:first-child {
+    border: none;
+}
+
+.drop-down ul li:last-child,
+.mega-menu ul li:last-child {
+    margin-bottom: 0;
+}
+
+.menu ul li:hover .drop-down,
+.menu ul li:hover .mega-menu {
+    display: block;
+    opacity: 2;
+    visibility: visible;
+}
+
+.drop-down ul li a {
+    font-size: 20px;
+    font-family: var(--font);
+
+}
+
+.mega-menu {
+    width: 45%;
+    background-color: #262626;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+}
+/* .section-2 */
+
+.section-2 h3{
+    color:  #265cdc;
+    margin: 60px;
+}
+.section-2 h1{
+    color: #1b1b1b;
+    font-size: 72px;
+    font-family: Jost,sans-serif;
+    font-style: normal;
+}
+.section-2 h4{
+    color: #aaa;
+    font-size: 20px;
+    margin: 20px;
+    font-family: Jost,sans-serif;
+    font-style: normal;
+}
+
+/* section-3 */
+
+.marketing {
+    padding: 40px 20px 100px;
+}
+
+.box-33 {
+    width: 25%;
+    height: 353px;
+    border: 1px solid #eee;
+    padding: 66px 33px;
+    margin: 40px;
+}
+
+.box-33 img {
+    width: 52px;
+    height: 52px;
+    text-align: center;
+    margin: 0 auto 35px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.box-33 h5 {
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    color: #1b1b1b;
+    font-size: 24px;
+    text-align: center;
+}
+
+.box-33 h6 {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: normal;
+    color: #7f8c8d;
+    line-height: 1.8;
+}
+
+/* section-4 */
+
+.section-4 {
+    width: 100%;
+    height: 800px;
+    background-image: url('https://20148114.fs1.hubspotusercontent-na1.net/hubfs/20148114/raw_assets/public/Melinda/images/team-table-hand.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 180px 20px 220px;
+}
+
+.section-4 h2 {
+    color: white;
+    width: 776px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-size: 54px;
+    line-height: 1.2;
+}
+
+.section-4 p {
+    color: white;
+    width: 776px;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+button {
+    margin: 30px 0px;
+    background-color: rgba(38, 92, 220, 1.0);
+    border: 1px solid #265cdc;
+    height: 60px;
+    width: 200px;
+    border-radius: 50px;
+    color: #fff;
+    padding: 13px 30px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-family: Jost, sans-serif;
+}
+
+.section-4 .btn {
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    display: inline-block;
+    border-bottom: 3px solid white;
+    padding: 5px;
+    margin-left: 40px;
+}
+
+/* section-5 */
+
+.section-5 .box-33 {
+    width: 345px;
+    height: 280px;
+    margin: 10px;
+    margin-top: -100px;
+    border: none;
+    background-color: #fff;
+    border: 1px solid grey;
+}
+
+.marketing {
+    padding: 0;
+}
+
+.section-5 .box-33:first-child {
+    background-color: #2d53e2;
+
+}
+
+.section-5 h4 {
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    color: white;
+    font-size: 30px;
+}
+
+.section-5 h5 {
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    color: #1b1b1b;
+    font-size: 24px;
+    margin: 0 0 30px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.section-5 p {
+    font-size: 14px;
+    line-height: 30px;
+    color: #7f8c8d;
+}
+
+/* section-6 */
+
+
+.section-6 {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 120px 20px 0px;
+}
+
+.section-6 h3 {
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    color: #265cdc;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.section-6 h1 {
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    color: #1b1b1b;
+    font-size: 54px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.section-6 h4 {
+    width: 770px;
+    line-height: 1.6;
+    font-size: 22px;
+    margin: 20px 0px 0px;
+    font-weight: normal;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    color: #aaa;
+}
+
+/* section-7 */
+
+
+.section-7 {
+    padding: 40px 0px 50px;
+}
+
+.box-6 {
+    width: 46%;
+    height: 361px;
+    border: 1px solid #aaa;
+    margin: 0px 30px 0px 0px;
+    padding: 60px;
+}
+
+.box-6 p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #1b1b1b;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.8;
+}
+
+.box-6 img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0px 15px 0px 0px;
+}
+
+.box-6 h5 {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    color: #1b1b1b;
+    font-size: 18px;
+    line-height: 1.2;
+    display: block;
+}
+
+.box-6 h6 {
+    color: #aaa;
+    font-family: Varela, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.8;
+    font-size: 15px;
+    display: inline-block;
+}
+
+/* section-8 */
+
+.section-8 {
+    padding: 120px 40px 0px;
+}
+
+.box-22 {
+    width: 22%;
+    height: 500px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.box-img {
+    background-image: url('https://20148114.fs1.hubspotusercontent-na1.net/hubfs/20148114/promo01.jpg');
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    padding: 360px 20px 20px 30px;
+    opacity: 0.1 black;
+}
+
+.box-22 h1 {
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 0;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    color: white;
+    font-size: 36px;
+}
+
+.box-22-1 {
+    width: 22%;
+    height: 500px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.box-22-1 .box-img {
+    background-image: url(https://20148114.fs1.hubspotusercontent-na1.net/hubfs/20148114/promo04.jpg);
+    height: 500px;
+    background-size: cover;
+    padding: 360px 20px 20px 30px;
+    opacity: 0.1 black;
+}
+
+.box-22-1 h1 {
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 0;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    color: white;
+    font-size: 36px;
+}
+
+.box-22-2 {
+    width: 22%;
+    height: 500px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.box-22-2 .box-img {
+    background-image: url(https://20148114.fs1.hubspotusercontent-na1.net/hubfs/20148114/promo03.jpg);
+    height: 500px;
+    background-size: cover;
+    padding: 360px 20px 20px 30px;
+    opacity: 0.1 black;
+}
+
+.box-22-2 h1 {
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 0;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    color: white;
+    font-size: 36px;
+}
+
+.box-22-3 {
+    width: 22%;
+    height: 500px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.box-22-3 .box-img {
+    background-image: url(https://20148114.fs1.hubspotusercontent-na1.net/hubfs/20148114/promo02.jpg);
+    height: 500px;
+    background-size: cover;
+    padding: 360px 20px 20px 30px;
+    opacity: 0.1 black;
+}
+
+.box-22-3 h1 {
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 0;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    color: white;
+    font-size: 36px;
+}
+
+/* section-9 */
+
+.content-9 {
+    margin: 60px;
+    padding: 120px 20px;
+    width: 50%;
+}
+
+.section-9 h3 {
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    color: #265cdc;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.section-9 h1 {
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    color: #1b1b1b;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.section-9 h4 {
+    font-size: 22px;
+    margin-top: 20px;
+    line-height: 1.6;
+    font-family: Jost, sans-serif;
+    color: #aaa;
+    font-style: normal;
+    font-weight: normal;
+    width: 540px;
+}
+
+.num {
+    width: 200px;
+    margin-top: 50px;
+}
+
+.num-2 {
+    margin-top: 50px;
+}
+
+.num h2 {
+    font-size: 60px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    color: #265cdc;
+    font-weight: 700;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+}
+
+.num h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #1b1b1b;
+    font-weight: 700;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    line-height: 1.8;
+    text-transform: capitalize;
+
+}
+
+.num-2 h2 {
+    font-size: 60px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    color: #265cdc;
+    font-weight: 700;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+}
+
+.num-2 h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #1b1b1b;
+    font-weight: 700;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    line-height: 1.8;
+    text-transform: capitalize;
+}
+
+.content-9-1 {
+    width: 50%;
+    height: 700px;
+    background-image: url('https://www.yeswefixit.gr/wp-content/uploads/2017/05/map.jpg');
+    background-size: cover;
+    margin-top: -670px;
+    margin-left: 50%;
+    padding: 250px;
+}
+
+.content-9-1 img {
+    width: 68px;
+    height: 68px;
+}
+
+.content-9-1 h5 {
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: 0;
+    vertical-align: middle;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    color: #1b1b1b;
+    font-size: 24px;
+    margin-top: 23px;
+}
+
+
+/* section-10 */
+
+.section-10 {
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+}
+
+.section-10-1 {
+    width: 50%;
+    background-image: url('https://20148114.fs1.hubspotusercontent-na1.net/hubfs/20148114/raw_assets/public/Melinda/images/table-phone.jpg');
+    height: 698px;
+    background-size: cover;
+    position: absolute;
+}
+
+.section-10-2 {
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    height: 698px;
+    background-color: #3870ed;
+    margin-left: 50%;
+    padding: 100px 100px 100px 60px;
+}
+
+.section-10-2 h3 {
+    margin: 0 0 25px;
+    color: white;
+    font-weight: 700;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.section-10-2 h2 {
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    color: white;
+    line-height: 1.2;
+    font-size: 36px;
+}
+
+.section-10-2 h4 {
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 1.6;
+    color: white;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.section-10-2 .btn {
+    color: white;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    display: inline-block;
+    border-bottom: 1px solid #2e6ef7;
+    padding: 20px 0px;
+    font-family: Varela, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.btn img {
+    width: 12px;
+    height: 12px;
+
+}
+
+/* section-11 */
+
+.section-11 {
+    width: 100%;
+    /* height: 460px; */
+    padding: 120px 20px 0px;
+    margin-top: 700px;
+}
+
+.section-11 h2 {
+    font-weight: 700;
+    margin-bottom: 25px;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    color: #265cdc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+}
+
+.section-11 h4 {
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    color: #1b1b1b;
+    margin-top: 35px;
+    font-size: 36px;
+    display: block;
+    text-align: center;
+}
+
+.section-11 h3 {
+    font-size: 22px;
+    margin-top: 20px;
+    line-height: 1.6;
+    font-family: Jost, sans-serif;
+    color: #aaa;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* section-12 */
+
+.section-12 {
+    padding-bottom: 120px;
+}
+
+.section-12 .box-img-1,
+.section-12 .box-img-2,
+.section-12 .box-img-3 {
+    width: 33%;
+    overflow: hidden;
+    height: 600px;
+    padding: 60px 20px 110px;
+}
+
+.section-12 .box-img-2 {
+    margin-left: 10px;
+}
+
+/* section-13 */
+
+.section-13 {
+    background-image: url('https://20148114.fs1.hubspotusercontent-na1.net/hubfs/20148114/raw_assets/public/Melinda/images/mw-phone.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 905px;
+    padding: 100px 20px;
+}
+
+.section-13 .box-1 {
+    width: 50%;
+    padding-right: 10px;
+    height: 705px;
+    background-image: url('https://20148114.fs1.hubspotusercontent-na1.net/hubfs/20148114/red-hat.jpg');
+}
+
+.section-13 .box-2 {
+    width: 50%;
+    height: 705px;
+    padding: 80px;
+    background-color: white;
+}
+
+.box-2 h4 {
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    color: #1b1b1b;
+    font-size: 30px;
+}
+
+.box-2 h5 {
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 1.6;
+    font-family: Jost, sans-serif;
+    color: #aaa;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-weight: 700;
+    font-size: 15px;
+    font-style: normal;
+    color: #aaa;
+    font-family: Jost, sans-serif;
+    display: block;
+    margin-bottom: 6px;
+}
+
+form input {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10.5px;
+    margin-bottom: 40px;
+}
+
+.slider-13 button {
+    background-color: rgba(38, 92, 220, 1.0);
+    border: 1px solid #265cdc;
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-family: Jost, sans-serif;
+}
+
+/* section-14 */
+
+.section-14 {
+    width: 1200px;
+    text-align: center;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.section-14 img {
+    width: 160px;
+    height: 76px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
+
+/* section-15 */
+
+.section-15 {
+    width: 100%;
+    background-color: rgba(22, 25, 32, 1.0);
+    padding: 100px 20px 0;
+    color: white;
+    height: 500px;
+}
+
+.section-15 .box-25 {
+    width: 25%;
+    padding: 0 20px;
+}
+
+.box-25 h5 {
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 30px
+}
+
+.box-25 h6 {
+    font-family: Varela, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+.box-25 h4 {
+    color: #265cdc;
+    font-style: normal;
+    font-weight: 400;
+    font-family: Jost, sans-serif;
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+
+.box-25 h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-family: Jost, sans-serif;
+    font-size: 18px;
+}
+
+.box-36 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #7f8c8d;
+    overflow: hidden;
+    padding: 8px;
+    margin: 5px;
+}
+
+.box-36 img {
+    width: 100%;
+    height: 100%;
+}
+.top-btn{
+    width: 60px;
+    height: 40px;
+    background-color: #3b74ef;
+    color: white;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    line-height: 40px;
+}
+
+a{
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+.fixed{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999999;
+    background-color: rgb(170, 168, 168);
+
+}
